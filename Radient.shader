@@ -10,11 +10,11 @@ void fragment() {
     float r = sqrt(dot(p, p));
 
     vec4 color0 = vec4(1.0,1.0,1.0,1.0);
-    vec4 color1 = vec4(1.0/2.0,1.0/2.0,1.0/2.0,0.6);
-    vec4 color2 = vec4(0,0,0,0.0);
+    vec4 color1 = vec4(0.5,0.5,0.5,0.6);
+    vec4 color2 = vec4(0,0,0,0);
 
     float colorStop0 = 0.0;
-    float colorStop1 = 0.6;
+    float colorStop1 = 0.8;
     float colorStop2 = 1.0;
 	
 	vec4 color;

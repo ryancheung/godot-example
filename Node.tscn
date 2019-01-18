@@ -30,9 +30,9 @@ shader_param/center = null
 shader_param/radius = null
 shader_param/textureHeight = null
 
-[node name="Node" type="Node" index="0"]
+[node name="Node" type="Node"]
 
-[node name="TextureRect" type="TextureRect" parent="." index="0"]
+[node name="TextureRect" type="TextureRect" parent="."]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -51,7 +51,7 @@ stretch_mode = 0
 script = ExtResource( 2 )
 _sections_unfolded = [ "Rect" ]
 
-[node name="Sprite" type="Sprite" parent="." index="1"]
+[node name="Sprite" type="Sprite" parent="."]
 
 material = SubResource( 2 )
 position = Vector2( 200, 200 )
@@ -59,20 +59,20 @@ texture = ExtResource( 3 )
 centered = false
 _sections_unfolded = [ "Material" ]
 
-[node name="Sprite2" type="Sprite" parent="." index="2"]
+[node name="Sprite2" type="Sprite" parent="."]
 
 position = Vector2( 0, 200 )
 texture = ExtResource( 3 )
 centered = false
 _sections_unfolded = [ "Transform" ]
 
-[node name="Viewport" type="Viewport" parent="." index="3"]
+[node name="Viewport" type="Viewport" parent="."]
 
 arvr = false
 size = Vector2( 400, 400 )
 own_world = false
 world = null
-transparent_bg = false
+transparent_bg = true
 msaa = 0
 hdr = true
 disable_3d = true
@@ -92,7 +92,7 @@ shadow_atlas_quad_1 = 2
 shadow_atlas_quad_2 = 3
 shadow_atlas_quad_3 = 4
 
-[node name="Light400x400" type="Node2D" parent="Viewport" index="0"]
+[node name="Light400x400" type="Node2D" parent="Viewport"]
 
 material = SubResource( 3 )
 script = ExtResource( 5 )
